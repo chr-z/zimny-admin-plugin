@@ -1,0 +1,25 @@
+# Arquivos e pastas que não devem ser versionados no repositório
+
+# Sistemas operacionais
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs e temporários
+*.log
+*.tmp
+*.bak
+
+# ZIPs de distribuição (gerado manualmente ao publicar uma release)
+*.zip
+
+# Arquivos de ambiente/secrets
+.env
+.env.*
