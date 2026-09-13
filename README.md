@@ -89,21 +89,21 @@ Como o repositório é **privado**, o Plugin Update Checker precisa de um **toke
 3. Dê um nome (ex: `zimny-admin-wordpress`)
 4. Marque o escopo **`repo`** (acesso total a repositórios privados)
 5. Clique **Generate token**
-6. Copie o token (começa com `ghp_`)
+6. Copie o token (começa com `<SEU_TOKEN>
 
 ### 2. Adicionar o token ao WordPress
 
 **Opção A — Constante no `wp-config.php`** (recomendada):
 
 ```php
-define('ZIMNY_GITHUB_TOKEN', 'ghp_xxxxxxxxxxxxxxxxxxxx');
+define('ZIMNY_GITHUB_TOKEN', '<SEU_TOKEN>
 ```
 
 **Opção B — Filtro no `functions.php` do tema**:
 
 ```php
 add_filter('zimny_github_token', function() {
-    return 'ghp_xxxxxxxxxxxxxxxxxxxx';
+    return '<SEU_TOKEN>
 });
 ```
 
